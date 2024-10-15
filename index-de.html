@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Diego Alejandro Cepeda Cuartas">
+  <meta name="description" content="Portafolio sobre mi y mi vida laboral">
+  <meta name="keywords" content="portafolio, programacion, emprendimiento, liderazgo, sociedad">
+  <!-- Fuente  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Iconos  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=g_translate">
+
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="assets\img\Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets\CSS\styles.css">
+  <script type="module" src="assets/js/main.js"></script>
+  <!-- EmailJS  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "Bw1xFvMed8IEYDSMA",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader flex--container">
+        <img src="assets\img\Logo.png" alt="Loader photo" title="Logo-loader" class="loader__logo">
+    </div>
+
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+        <img src="assets\img\Logo.png" class="navbar__logo">
+      <a class="navbar__logo flex--container" href="#">CFD/CAE COLOMBIA</a>
+
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Startseite</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Über mich</a>
+          </li>
+          
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Kompetenzen</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Projekts</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="#publications">Veröffentlichungen</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__item grid--container" id="language">
+        <a class="navbar__link" href="#language">
+          <span class="material-symbols-outlined">
+            g_translate
+            </span>
+        </a>
+        <div class="language grid--container">
+          <a href="index-es.html" class="lan" >ES</a>
+          <a href="index-en.html" class="lan">EN</a>
+          <a href="index-fr.html" class="lan">FR</a>
+          <a href="index-de.html" class="lan">DE</a>
+        </div>
+      </div>
+
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <img src="assets\img\Foto-de-perfil.ico" alt="profile photo" title="Profile" />
+        </div>
+
+        <ul class="home__social flex--container">
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://www.linkedin.com/in/diego-alejandro-cepeda-cuartas-3757381a5/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://wa.me/3118220327?text=Tu%20Mensaje%20De%20Texto" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://github.com/diegocepeda2408" target="_blank"><i class="bx bxl-github"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="mailto:dacepedac1@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+          <h1 class="home__title">Hallo, das ist Diego</h1>
+
+          <p class="home__description">
+            Luftfahrtingenieur • CFD-Ingenieur • Datenwissenschaftler • Webprogrammierer
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <a class="btn btn--primary" href="assets\img\CV Diego Alejandro Cepeda Cuartas.pdf" title="Meinen Lebenslauf herunterladen" download="mein_cv" rel="noreferrer nofollow">
+            Lebenslauf herunterladen
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about section">
+      <h2 class="section__title">Über mich</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+            Ich bin Luftfahrtingenieur, Absolvent der Universidad San Buenaventura in Bogotá, Kolumbien. Derzeit arbeite ich als Aerodynamikingenieur, auch bekannt als CFD-Ingenieur. Darüber hinaus habe ich viele Ingenieurprojekte auf der Grundlage von Strukturanalysen, Strahltriebwerken und der Entwicklung von Programmen zur Lösung von Ingenieurproblemen durchgeführt. Ich habe einen Abschluss in Computational Fluid Dynamics und Aerodynamik sowie in Datenanalyse mit maschinellem Lernen und künstlicher Intelligenz, letzterer am Massachusetts Institute of Technology (MIT) erworben. Sie können mehr über meine Projekte und Erfolge erfahren, indem Sie die angehängte Lebenslaufdatei herunterladen.
+        </p>
+
+        <div class="about__cards flex--container">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets\img\IMG_1427.jpg" alt="Laborando como ingeniero"
+              title="Image 1" />
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets\img\Bildschirmfoto 2024-10-13 um 1.42.26 PM.jpeg.png" alt="Laborando como diseñador"
+              title="Image 2" />
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets\img\Bildschirmfoto 2024-10-13 um 2.10.57 PM.jpeg.png" alt="Trabajando en equipo"
+              title="Image 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title"> Kompetenzen</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description flex--container">
+            Hier sind einige der Programme, in denen ich über solide Kenntnisse verfüge:
+        </p>
+
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">
+            <!--Card 1 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-html5 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">HTML</h3>
+
+                <p class="skills__card-description">
+                  <ul>
+                    <li>• Webentwicklung</li>
+                    <li>• Erstellung von Blogs und Webseiten für die Entwicklung in der Ingenieurwissenschaft</li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+            <!--Card 2 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-css3 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">CSS3</h3>
+
+                <p class="skills__card-description">
+                  <ul>
+                    <li>• Entwurf und Erstellung von Webseiten mit HTML unter Verwendung von CSS3-Code, um eine hervorragende Präsentation der Webseiten zu bieten und die Seiten für das Publikum ansprechender zu gestalten</li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-javascript flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript</h3>
+
+                <p class="skills__card-description">
+                  <ul>
+                    <li>• Programmierung von Funktionen zur Bereitstellung von Lösungen für verschiedene ingenieurtechnische Gleichungsprobleme unter Verwendung numerischer Methoden und JavaScript-Tools</li>
+                    <li>• Programmierung von Ereignissen in HTML-Dateien, um Interaktivität zu den in HTML5 und CSS3 entwickelten Seiten hinzuzufügen</li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+            <!--Card 4 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-react flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">React</h3>
+
+                <p class="skills__card-description">
+                  <ul>
+                    <li>• Ich entwickle diese Fähigkeit derzeit mit dem Programmierungsinstitut Academlo</li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+
+            <!--Card 5 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-python flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Python</h3>
+
+                <p class="skills__card-description">
+                  <ul>
+                    <li>• Programmierung von Regressionsmodellen für Anwendungen im Bereich maschinelles Lernen und künstliche Intelligenz. Derzeit arbeite ich daran, meine Fähigkeiten im Deep Learning zu verbessern</li>
+                    <li>• Verwendung von Bibliotheken wie: pandas, numpy, scipy, sklearn, Keras und anderen </li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+
+            <!--Card 6 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <img class="svg__icon flex--container" src="assets\img\matlab-svgrepo-com.svg" alt="Matlab">
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">MATLAB</h3>
+
+                <p class="skills__card-description">
+                  <ul>
+                    <li>• Programmierung von Gleichungen zur Überprüfung der Ergebnisse der in Python und JavaScript verwendeten Codes</li>
+                    <li>• Verwendung von Simulink zur Stabilitäts- und Kontrollanalyse </li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+
+            <!--Card 7 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+            <summary class="skills__cards-title flex--container">
+              <img class="svg__icon flex--container" src="assets\img\ansys-svgrepo-com.svg" alt="ANSYS">
+            </summary>
+            <div class="skills__card-container">
+              <h3 class="skills__card-title">ANSYS</h3>
+
+              <p class="skills__card-description">
+                <ul>
+                  <li>• Modellierung und Vernetzung von Komponenten mit SpaceClaim und Fluent Mesher oder ICEM CFD</li>
+                  <li>• Simulation des Verhaltens von Fluiden im stationären und transiente Zustand mit statischen oder beweglichen Bauteilen (Turbomaschinen) </li>
+                  <li>• Verwendung von ANSYS-Software wie: ANSYS CFX, ANSYS VISTA, ANSYS Fluent </li>
+                </ul>
+              </p>
+            </div>
+          </details>
+
+          <!--Card 8 -->
+          <details class="skills__cards-container" name="moreInfo" open>
+            <summary class="skills__cards-title flex--container">
+              <img class="svg__icon flex--container" src="assets\img\autodesk-svgrepo-com.svg" alt="Autodesk">
+            </summary>
+            <div class="skills__card-container">
+              <h3 class="skills__card-title">Autodesk Inventor</h3>
+
+              <p class="skills__card-description">
+                <ul>
+                  <li>• Modellierung von Bauteilen mit komplexen Geometrien und Blechkonstruktionen</li>
+                  <li>• Zusammenstellung und Simulation der Bewegung von Komponenten für die Ingenieurwissenschaft, wie Motoren und Flugzeuge</li>
+                  <li>• Verwendung von Flächen, Messwerkzeugen und struktureller Analyse, Optimierung von Komponenten</li>
+                </ul>
+              </p>
+            </div>
+          </details>
+          </div>
+        </div>
+        <div class="skills__tags flex--container">
+          <h3 class="skills__tags-title">Soft Skills</h3>
+          <div class="skills__tags-container flex--container">
+            <span class="skills__tag">Verantwortlich</span>
+            <span class="skills__tag">Teamarbeit</span>
+            <span class="skills__tag">Kreativ</span>
+            <span class="skills__tag">Pünktlich</span>
+            <span class="skills__tag">Proaktiv</span>
+            <span class="skills__tag">Ehrlich</span>
+            <span class="skills__tag">Freundlich</span>
+            <span class="skills__tag">Gute Kommunikationsfähigkeiten</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Projekts</h2>
+
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets\img\pngwing.com.png" alt="project 1" title="Stirling engine" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Modellierung und Konstruktion eines Stirlingmotors</h3>
+              <p class="projects__description">
+                <ul>
+                  <li>Ich habe in einem Team von drei Personen zusammengearbeitet, um einen Stirlingmotor zu modellieren und zu konstruieren, der eine LED aktiviert (unter Verwendung von CATIA V5, Thermodynamik und Strukturanalyse).</li>
+                  <li>Ich habe das Dokument des Teams mit Microsoft Word erstellt.</li>
+                  <li>Wir wurden vom Publikum der Fakultät als 'Beste Präsentation' unter 10 Teams während des 'Ingenieurtags', an dem dieses Projekt vorgestellt wurde, anerkannt.</li>
+                </ul>
+              </p>
+
+              <div class="projects__buttons">
+                <a href="assets\projects\Diseño y Analisis Termodinamico de Motor Stirling.pdf" target="_blank">
+                  <button class="btn projects__button" type="button">
+                    DOKUMENT ANSEHEN
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets\img\rocket.png" alt="project 2" title="Rocket" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Software zur Gestaltung von Brennkammern und Raketendüsen mit festen Treibstoffen</h3>
+              <p class="projects__description">
+                <ul>
+                  <li>Ich habe ein Team von drei Personen geleitet, um eine Software zu entwerfen und zu entwickeln, die eine theoretische Geometrie einer Rakete basierend auf den vom Benutzer eingegebenen Parametern generiert.</li>
+                  <li>Ich habe ein Programm mit einer dynamischen Benutzeroberfläche unter Verwendung von MATLAB App Designer entwickelt.</li>
+                  <li>Ich habe einen Prototyp einer Rakete modelliert, indem ich das Programm mit CAD-Software (Excel, Autodesk Inventor) integriert habe.</li>
+                </ul>
+              </p>
+
+              <div class="projects__buttons">
+                <a href="assets\projects\Documento PI Construccion de Motores 1.pdf" target="_blank">
+                  <button class="btn projects__button" type="button">
+                  DOKUMENT ANSEHEN
+                  </button>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets\img\Algorithm.png" alt="project 3" title="Algorithm" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Programmierung zur Lösung der Navier-Stokes-Gleichungen mit dem SIMPLE-Algorithmus</h3>
+              <p class="projects__description">
+                <ul>
+                  <li>Projekt entwickelt, um das Verhalten eines ein-dimensionalen stationären Flusses in einer konvergierenden Düse zu simulieren.</li>
+                  <li>Programmierung eines Abschnitts des SIMPLE-Algorithmus zur Lösung der erforderlichen eindimensionalen Geometrie mit verschiedenen Querschnitten (MATLAB).</li>
+              </p>
+
+              <div class="projects__buttons">
+                <a href="assets\projects\3. SIMPLE Algorithm Project - Assignment 22 - Diego A Cepeda C.pdf" target="_blank">
+                  <button class="btn projects__button" type="button">
+                  DOKUMENT ANSEHEN
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets\img\Ahmed.PNG" alt="project 4" title="Ahmed body" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Simulation der aerodynamischen Koeffizienten an einem Ahmed-Körper</h3>
+              <p class="projects__description">
+                <ul>
+                  <li>Modellierung und Simulation eines Standard-Ahmed-Körpers, um die Widerstands- und Auftriebskoeffizienten bei variierendem Sillage-Winkel zu erhalten.</li>
+              </p>
+
+              <div class="projects__buttons">
+                <a href="https://skill-lync.com/student-projects/week-3-external-flow-simulation-over-an-ahmed-body-474" target="_blank">
+                  <button class="btn projects__button" type="button">
+                  DOKUMENT ANSEHEN
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets\img\RS.PNG" alt="project 5" title="Recommendation System" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Empfehlungssystem für Amazon-Kunden</h3>
+              <p class="projects__description">
+                <ul>
+                  <li>Datenanalyse und Modellierung eines Empfehlungssystems, um Amazon-Kunden vorzuschlagen, was ihr nächster Kauf basierend auf den Interessen jedes Kunden sein könnte (Clustering, Maschinelles Lernen).</li>
+              </p>
+
+              <div class="projects__buttons">
+                <a href="assets\projects\Amazon Product Recommendation System Project - Diego A Cepeda C.html" target="_blank">
+                  <button class="btn projects__button" type="button">
+                  HTML ANSEHEN
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="publications section">
+        <h2 class="section__title">Veröffentlichungen</h2>
+  
+        <div class="publications__container grid--container">
+          <div class="publications__project">
+            <div class="publications__inner grid--container">
+              <div class="publications__image">
+                <img src="assets\img\pngwing.com.png" alt="publication 1" title="Stirling engine" />
+              </div>
+  
+              <div class="publications__info">
+                <h3 class="publications__name">Modellierung und Konstruktion eines Stirlingmotors</h3>
+                <p class="publications__description">
+                  In der Projektsektion beschrieben, können Sie das vollständige Projektdokument anzeigen, indem Sie auf die folgende Schaltfläche klicken:
+                </p>
+  
+                <div class="publications__buttons">
+                  <a href="https://www.researchgate.net/publication/360112131_Modelamiento_y_Demostracion_de_Funcionamiento_de_Motor_Stirling" target="_blank">
+                    <button class="btn publications__button" type="button">
+                    DOKUMENT ANSEHEN
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="publications__project">
+            <div class="publications__inner grid--container">
+              <div class="publications__image">
+                <img src="assets\img\VR.PNG" alt="publication 2" title="VR in aerospace sector" />
+              </div>
+  
+              <div class="publications__info">
+                <h3 class="publications__name">Studie des Stands der Technik zu Anwendungen der virtuellen Realität im Luft- und Raumfahrtsektor</h3>
+                <p class="publications__description">
+                  Bibliometrische Analyse der Nutzung von virtueller Realität und der am häufigsten bekannten Software- und Hardware-Geräte auf dem Markt, einschließlich einiger Vorschriften und Zertifizierungen, die für deren Verwendung zur Schulung von Personal gelten, sowie der Anforderungen, die das Personal erfüllen muss, um als Luftfahrzeugwartungstechniker zertifiziert zu werden.
+                </p>
+  
+                <div class="publications__buttons">
+                  <a href="https://www.researchgate.net/publication/384903802_Estudio_del_estado_del_arte_de_aplicaciones_de_realidad_virtual_aplicadas_en_el_sector_aeroespacial" target="_blank">
+                    <button class="btn publications__button" type="button">
+                    DOKUMENT ANSEHEN
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Kontakt</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Kontaktinformationen</h3>
+          <p class="contact__info-description">
+            Sie können mich über die folgenden Kanäle kontaktieren, oder wenn nötig, hinterlassen Sie mir eine Nachricht im Dialogfeld, und ich werde Ihre Anfrage so schnell wie möglich bearbeiten.
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/3118220327?text=Tu%20Mensaje%20De%20Texto" target="_blank"
+                  rel="noreferrer nofollow">Schicken Sie mir eine Nachricht über WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:53-311-822-0327" target="_blank" rel="noreferrer nofollow">
+                  (+57) 311-822-0327
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:dacepedac1@gmail.com" target="_blank" rel="noreferrer nofollow">
+                  dacepedac1@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> Bogotá, Kolumbien. </span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Hinterlassen Sie eine Nachricht</h3>
+
+
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Mail</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Betreff</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Nachricht</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Formular erfolgreich gesendet!
+              <button type="reset" id="btn_close-modal">Schließen</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Senden
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section">
+    
+    <div class="footer__container grid--container">
+
+      <div class="footer__logo">
+        <img src="assets\img\CFDCAE.PNG" class="footer__logo-img">
+      </div>
+
+      <div class="footer__info">
+        <h3 class="footer__title">Ing. Diego Alejandro Cepeda Cuartas</h3>
+        <p class="footer__description">
+          Luftfahrtingenieur • CFD-Ingenieur • Datenwissenschaftler • Webprogrammierer
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Soziale Medien</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/diegoalejandro.cepedacuartas.3/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/alejoo.17/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/diego-alejandro-cepeda-cuartas-3757381a5/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+    
+  </footer>
+
+</body>
+
+</html>
